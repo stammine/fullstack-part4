@@ -1,0 +1,4 @@
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"title":"How to do it?","author":"Samu", "url": "url", "likes": 34}' \
+  http://localhost:3003/api/blogs
