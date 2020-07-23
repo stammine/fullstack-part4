@@ -2,3 +2,12 @@ curl --header "Content-Type: application/json" \
   --request POST \
   --data '{"title":"How to do it?","author":"Samu", "url": "url", "likes": 34}' \
   http://localhost:3003/api/blogs
+
+curl --header "Content-Type: application/json" \
+  --request DELETE \
+  http://localhost:3003/api/blogs/5f19d4f9d52f22470356f766
+
+curl --header "Content-Type: application/json" \
+  --request PUT \
+  --data '{"title":"How to do it?","author":"Samu", "url": "weburl", "likes": 314}' \
+  http://localhost:3003/api/blogs/5f0b21f1e6b0a75281300e4f
